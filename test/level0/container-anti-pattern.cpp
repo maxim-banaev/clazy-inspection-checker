@@ -9,11 +9,11 @@
 #pragma ide diagnostic ignored "UnusedValue"
 #pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
 
-#include <QtCore/QSet>
-#include <QtCore/QHash>
-#include <QtCore/QMap>
-#include <QtCore/QList>
-#include <QtCore/QVector>
+#include <QHash>
+#include <QList>
+#include <QMap>
+#include <QSet>
+#include <QVector>
 
 namespace container_anti_pattern{
     [[maybe_unused]] void test()

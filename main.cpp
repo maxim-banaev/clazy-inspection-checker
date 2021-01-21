@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "-Wclazy-qstring-allocations"
 #include <QApplication>
 #include <QPushButton>
 
@@ -10,4 +8,3 @@ int main(int argc, char *argv[]) {
     button.show();
     return QApplication::exec();
 }
-#pragma clang diagnostic pop

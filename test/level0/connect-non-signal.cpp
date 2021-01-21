@@ -7,7 +7,7 @@
 #pragma ide diagnostic ignored "readability-convert-member-functions-to-static"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
 
-#include <QtCore/QObject>
+#include <QObject>
 
 namespace connect_non_signal {
     class MyObj : public QObject {
@@ -19,13 +19,13 @@ namespace connect_non_signal {
 
     signals:
 
-        void mySig();
+        void mySig(){};
 
         virtual void myVirtualSig(){};
 
     public Q_SLOTS:
 
-        void mySlot();
+        void mySlot(){};
     };
 
     [[maybe_unused]] void test() {
@@ -41,7 +41,7 @@ namespace connect_non_signal {
         void foo(){};
 
     signals:
-        void mySig();
+        void mySig() {};
     };
 
     [[maybe_unused]] void test2() {

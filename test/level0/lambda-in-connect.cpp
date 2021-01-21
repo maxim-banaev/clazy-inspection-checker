@@ -13,7 +13,7 @@
 #pragma clang diagnostic ignored "-Wuninitialized"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
 
-#include <QtCore/QObject>
+#include <QObject>
 
 namespace lambda_in_connect {
     struct A {

@@ -10,7 +10,7 @@
 #include <QString>
 
 namespace {
-    [[maybe_unused]] [[maybe_unused]] void check() {
+    [[maybe_unused]] void check() {
         QString s1 = "foo";
         QString s2 = QLatin1String("foo");
         QString s3 = QLatin1String(""); // no alloc

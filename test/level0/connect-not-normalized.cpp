@@ -7,8 +7,8 @@
 #pragma ide diagnostic ignored "cppcoreguidelines-pro-type-member-init"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
 
-#include <QtCore/QObject>
-#include <QtCore/QVariant>
+#include <QObject>
+#include <QVariant>
 
 namespace connect_not_normalized {
     [[maybe_unused]] void test() {

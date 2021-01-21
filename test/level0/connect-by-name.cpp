@@ -1,4 +1,4 @@
-#include <QtCore/QObject>
+#include <QObject>
 
 // connect-by-name from level0
 // problems: 1

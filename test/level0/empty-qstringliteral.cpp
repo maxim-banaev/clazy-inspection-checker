@@ -5,6 +5,9 @@
 // Suggests to use QLatin1String("") instead of QStringLiteral() and QStringLiteral(""). QStringLiteral should only be
 // used where it would reduce memory allocations.
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
+
 #include <QString>
 
 namespace empty_qstringliteral {
@@ -17,3 +20,5 @@ namespace empty_qstringliteral {
     }
 }
 
+
+#pragma clang diagnostic pop

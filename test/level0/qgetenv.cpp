@@ -9,8 +9,8 @@
 #pragma ide diagnostic ignored "UnusedLocalVariable"
 #pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
 
-#include <QtCore/qglobal.h>
-#include <QtCore/qbytearray.h>
+#include <qbytearray.h>
+#include <qglobal.h>
 
 namespace q_getenv {
     [[maybe_unused]] int test() {
