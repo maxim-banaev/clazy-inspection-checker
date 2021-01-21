@@ -7,7 +7,7 @@
 
 #include <QString>
 
-namespace {
+namespace empty_qstringliteral {
     [[maybe_unused]] void check() {
         auto s1 = QStringLiteral("foo");
         auto s2 = QStringLiteral("");
