@@ -10,10 +10,8 @@
 #pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
 
 #include <QHash>
-#include <QList>
 #include <QMap>
 #include <QSet>
-#include <QVector>
 
 namespace container_anti_pattern{
     [[maybe_unused]] void test()

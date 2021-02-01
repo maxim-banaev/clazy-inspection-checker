@@ -1,9 +1,10 @@
 // connect-not-normalized from level0
-// problems: 1(pop)
+// problems: 7 + 1(pop)
 // https://github.com/KDE/clazy/blob/master/docs/checks/README-connect-not-normalized.md
 // Warns when the contents of SIGNAL(), SLOT(), Q_ARG() and Q_RETURN_ARG() are not normalized.
 
 #pragma clang diagnostic push
+#pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
 #pragma ide diagnostic ignored "cppcoreguidelines-pro-type-member-init"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
 #pragma ide diagnostic ignored "-Wclazy-ctor-missing-parent-argument"
@@ -28,7 +29,7 @@ namespace connect_not_normalized {
 
         Q_ARG(QVariant, v); // OK
         Q_ARG(QVariant & , v); // Warn
-        Q_ARG(QVariant & , v); // OK
+        Q_ARG(QVariant& , v); // OK
         Q_ARG(const QVariant &, v); // Warn
     }
 
@@ -36,7 +37,7 @@ namespace connect_not_normalized {
         QObject o;
         o.connect(&o, SIGNAL(destroyed(int, int)), // Warn
                   &o, SLOT(void foo(const int))); // Warn
-        o.connect(&o, SIGNAL(destroyed(int, int)), // OK
+        o.connect(&o, SIGNAL(destroyed(int,int)), // OK
                   &o, SLOT(void foo(int))); // OK
 
         o.disconnect(&o, SLOT(void foo(const int))); // OK
