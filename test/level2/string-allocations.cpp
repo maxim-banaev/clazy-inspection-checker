@@ -1,11 +1,11 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
 // string-allocations from level2
 // problems: 5 + 1(pop)
 // https://github.com/KDE/clazy/blob/master/docs/checks/README-qstring-allocations.md
 
 // Finds places with unneeded memory allocations due to temporary QStrings.
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "-Wclazy-unused-non-trivial-variable"
 
 #include <QString>
 
