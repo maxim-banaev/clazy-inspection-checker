@@ -1,8 +1,10 @@
 // qenums from level0
-// problems: 1
+// problems: 1 + 1(pop)
 // https://github.com/KDE/clazy/blob/master/docs/checks/README-qenums.md
 // Warns when you're using Q_ENUMS. Use Q_ENUM instead.
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "-Wclazy-missing-qobject-macro"
 
 #include <QObject>
 
@@ -29,3 +31,4 @@ namespace qenums {
         Q_ENUMS(B::BB)// OK
     };
 }// namespace qenums
+#pragma clang diagnostic pop

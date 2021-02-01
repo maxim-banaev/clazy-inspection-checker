@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "-Wclazy-qstring-allocations"
 // auto-unexpected-qstringbuilder from level1
 // problems: 3 + 2(expression result unused) + 1(pop)
 // https://github.com/KDE/clazy/blob/master/docs/checks/README-auto-unexpected-qstringbuilder.md
@@ -27,4 +29,5 @@ namespace auto_unexpected_qstringbuilder {
         };
     }
 }
+#pragma clang diagnostic pop
 #pragma clang diagnostic pop

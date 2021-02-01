@@ -6,6 +6,9 @@
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "cppcoreguidelines-pro-type-member-init"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
+#pragma ide diagnostic ignored "-Wclazy-ctor-missing-parent-argument"
+#pragma ide diagnostic ignored "-Wclazy-missing-qobject-macro"
+#pragma ide diagnostic ignored "-Wclazy-old-style-connect"
 
 #include <QObject>
 #include <QVariant>

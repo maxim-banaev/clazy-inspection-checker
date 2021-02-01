@@ -6,6 +6,10 @@
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "readability-convert-member-functions-to-static"
 #pragma ide diagnostic ignored "readability-static-accessed-through-instance"
+#pragma ide diagnostic ignored "-Wclazy-ctor-missing-parent-argument"
+#pragma ide diagnostic ignored "-Wclazy-overridden-signal"
+#pragma ide diagnostic ignored "-Wclazy-old-style-connect"
+#pragma ide diagnostic ignored "-Wclazy-virtual-signal"
 
 #include <QObject>
 
